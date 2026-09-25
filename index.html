@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirthi Sabari Kumar | Data Analyst & MSc Data Science Specialist</title>
+  <meta name="description" content="Portfolio of Kirthi Sabari Kumar - Data Analyst, MSc Data Science Student at University of Sheffield. Specializing in Power BI, SQL, Python, Machine Learning, PySpark, and Computer Vision." />
+  <meta name="keywords" content="Kirthi Sabari Kumar, Data Analyst, Data Scientist, Power BI, Python, SQL, Machine Learning, Portfolio, Sheffield" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">&lt;</span>Portfolio<span class="logo-accent">/&gt;</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#research" class="nav-link">Research & IP</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="master_cv.docx" download class="btn btn-outline btn-sm">
+          <i class="fa-solid fa-download"></i> Resume
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span> Available for Data Analyst & Data Science Roles
+          </div>
+          <h1 class="hero-title">
+            <span class="gradient-text">Kirthi Sabari Kumar</span>
+          </h1>
+          <p class="hero-subtitle">
+            MSc Data Science Student at <strong class="text-white">University of Sheffield</strong> & Experienced Data Analyst turning complex multi-source data into actionable business intelligence & high-accuracy predictive ML models.
+          </p>
+
+          <div class="hero-tags">
+            <span class="tag"><i class="fa-solid fa-chart-column"></i> Power BI & DAX</span>
+            <span class="tag"><i class="fa-solid fa-database"></i> SQL & Big Data</span>
+            <span class="tag"><i class="fa-brands fa-python"></i> Python & ML</span>
+            <span class="tag"><i class="fa-solid fa-brain"></i> Computer Vision & DL</span>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              Explore Projects <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Get In Touch <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/kirthisabari25" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/kirthisabari25" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:kirthisabari561@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="tel:+447352678358" aria-label="Phone">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="glass-card profile-card">
+            <div class="avatar-wrapper">
+              <div class="avatar-glow"></div>
+              <div class="avatar-box">
+                <i class="fa-solid fa-user-astronaut avatar-icon"></i>
+              </div>
+            </div>
+
+            <div class="profile-info">
+              <h3>Kirthi Sabari Kumar</h3>
+              <p class="role-text">MSc Data Science | Data Analyst</p>
+              <p class="location-text"><i class="fa-solid fa-location-dot"></i> Sheffield, United Kingdom</p>
+            </div>
+
+            <!-- Key Quick Metrics -->
+            <div class="metrics-grid">
+              <div class="metric-item">
+                <span class="metric-number" data-target="12">0</span><span class="metric-plus">+</span>
+                <span class="metric-label">Key Projects</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number" data-target="4">0</span><span class="metric-plus"></span>
+                <span class="metric-label">Industry Simulations</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number" data-target="2">0</span><span class="metric-plus"></span>
+                <span class="metric-label">Govt Copyrights</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number" data-target="97.6">0</span><span class="metric-plus">%</span>
+                <span class="metric-label">Max ML Accuracy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">BACKGROUND & OBJECTIVE</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-desc">Building the bridge between raw data, deep learning research, and strategic decision-making.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-text-card">
+            <h3><i class="fa-solid fa-bullseye gradient-icon"></i> Professional Profile</h3>
+            <p>
+              I am currently pursuing my <strong>MSc in Data Science at the University of Sheffield, UK</strong>, following my <strong>B.Tech in Artificial Intelligence and Data Science Engineering</strong> (CGPA: 8.06/10).
+            </p>
+            <p>
+              My expertise spans <strong>SQL querying, Python predictive analytics, Power BI interactive dashboard creation (DAX & Data Modelling), PySpark/Databricks big data analytics, and Deep Learning</strong> (CNNs, Autoencoders, Computer Vision).
+            </p>
+            <p>
+              I have completed real-world industry data-analytics job simulations with top global firms including <strong>Deloitte, British Airways, and Lloyds Banking Group</strong> via Forage. Additionally, I hold government-registered copyrights and published research in international peer-reviewed journals.
+            </p>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>DataCamp Certified Associate Data Analyst in SQL</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>DataCamp Certified Data Analyst in Power BI (50-hr Track)</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Triple KNIME Certified (Manipulation, Transformation, Visualization)</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Published Research Author (Impact Factor: 8.57)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-container">
+            <div class="glass-card stat-card">
+              <div class="stat-icon-wrapper cyan">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="stat-details">
+                <span class="stat-title">Education</span>
+                <h4>MSc Data Science</h4>
+                <p>University of Sheffield (2025 - Present)</p>
+                <p class="subtext">B.Tech AI & Data Science (Panimalar, CGPA 8.06)</p>
+              </div>
+            </div>
+
+            <div class="glass-card stat-card">
+              <div class="stat-icon-wrapper indigo">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <div class="stat-details">
+                <span class="stat-title">Industry Training</span>
+                <h4>Virtual Simulations</h4>
+                <p>Deloitte | British Airways | Lloyds Banking Group</p>
+                <p class="subtext">Forensic Data Analytics & Predictive ML</p>
+              </div>
+            </div>
+
+            <div class="glass-card stat-card">
+              <div class="stat-icon-wrapper purple">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div class="stat-details">
+                <span class="stat-title">Research & IP</span>
+                <h4>2 Govt Copyrights & Paper</h4>
+                <p>TIJER International Journal & IConIC Conf</p>
+                <p class="subtext">Deep Learning, Medical Implants & IoT Systems</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">TECHNICAL TOOLKIT</span>
+          <h2 class="section-title">Skills & <span class="gradient-text">Proficiencies</span></h2>
+          <p class="section-desc">Comprehensive suite of data engineering, business intelligence, and ML tools.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Category 1 -->
+          <div class="glass-card skill-category">
+            <div class="category-header">
+              <i class="fa-solid fa-database category-icon"></i>
+              <h3>Data Querying & BI Tools</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>SQL (PostgreSQL, MySQL, T-SQL)</span>
+                  <span class="skill-pct">95%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Power BI (DAX, Data Modelling, Reports)</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>KNIME Analytics Platform</span>
+                  <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Tableau & Advanced Excel</span>
+                  <span class="skill-pct">88%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 88%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 2 -->
+          <div class="glass-card skill-category">
+            <div class="category-header">
+              <i class="fa-brands fa-python category-icon"></i>
+              <h3>Python & Machine Learning</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Python (Pandas, XGBoost, Scikit-learn)</span>
+                  <span class="skill-pct">92%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 92%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Deep Learning (CNNs, Autoencoders, PyTorch/TF)</span>
+                  <span class="skill-pct">86%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 86%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Computer Vision (YOLOv5, OpenCV)</span>
+                  <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>PySpark & Databricks</span>
+                  <span class="skill-pct">82%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 82%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Category 3 -->
+          <div class="glass-card skill-category">
+            <div class="category-header">
+              <i class="fa-solid fa-chart-line category-icon"></i>
+              <h3>Analytical Methodologies</h3>
+            </div>
+            <div class="skill-chips">
+              <span class="chip"><i class="fa-solid fa-magnifying-glass"></i> Exploratory Data Analysis</span>
+              <span class="chip"><i class="fa-solid fa-diagram-project"></i> Customer Segmentation</span>
+              <span class="chip"><i class="fa-solid fa-triangle-exclamation"></i> Anomaly Detection</span>
+              <span class="chip"><i class="fa-solid fa-wave-square"></i> Time-Series & Signal Processing</span>
+              <span class="chip"><i class="fa-solid fa-calculator"></i> DAX Measure Engineering</span>
+              <span class="chip"><i class="fa-solid fa-sitemap"></i> Star Schema Modelling</span>
+              <span class="chip"><i class="fa-solid fa-coins"></i> Financial Intelligence</span>
+              <span class="chip"><i class="fa-solid fa-vr-cardboard"></i> Unity & 3D Simulation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">PORTFOLIO SHOWCASE</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span> (12 Full Projects)</h2>
+          <p class="section-desc">Interactive, real-world data analytics, environmental science, and predictive ML solutions.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-controls">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="project-search" placeholder="Search all 12 projects by title, tool, or keyword..." />
+          </div>
+
+          <div class="filter-tabs" id="filter-tabs">
+            <button class="tab-btn active" data-filter="all">All Projects (12)</button>
+            <button class="tab-btn" data-filter="powerbi">Power BI & BI</button>
+            <button class="tab-btn" data-filter="ml">ML & Deep Learning</button>
+            <button class="tab-btn" data-filter="data-analysis">Data Analysis & EDA</button>
+            <button class="tab-btn" data-filter="bigdata">Big Data & Spark</button>
+            <button class="tab-btn" data-filter="vr">VR & IoT</button>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <article class="glass-card project-card" data-category="powerbi" data-keywords="power bi dax customer churn telecom databel segmentation reporting dashboard">
+            <div class="project-banner powerbi-gradient">
+              <i class="fa-solid fa-chart-pie card-banner-icon"></i>
+              <span class="badge">Power BI Case Study</span>
+            </div>
+            <div class="project-content">
+              <h3>Customer Churn Analysis Dashboard</h3>
+              <p class="project-summary">
+                Interactive 6-page report analysing 6,687 telecom customers (Databel) to pinpoint key churn drivers and recommend high-impact retention strategies.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-fire"></i> Highlight: 26.86% overall churn rate; identified 38.46% senior churn risk.
+              </div>
+              <div class="project-tech-stack">
+                <span>Power BI</span>
+                <span>DAX</span>
+                <span>Data Modelling</span>
+                <span>Customer Segmentation</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="0">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="glass-card project-card" data-category="ml" data-keywords="tool condition monitoring temporal convolutional autoencoder deep learning cnc time-series anomaly detection python">
+            <div class="project-banner ml-gradient">
+              <i class="fa-solid fa-microchip card-banner-icon"></i>
+              <span class="badge">Deep Learning Paper</span>
+            </div>
+            <div class="project-content">
+              <h3>CNC Tool Condition Monitoring (Temporal Conv Autoencoder)</h3>
+              <p class="project-summary">
+                Unsupervised deep learning system detecting worn CNC milling tools from spindle-torque time-series data without requiring worn labels.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-circle-check"></i> Achieved 97.64% cycle accuracy & 97.71% worn-cycle recall.
+              </div>
+              <div class="project-tech-stack">
+                <span>Python</span>
+                <span>PyTorch/TF</span>
+                <span>Temporal Autoencoder</span>
+                <span>Anomaly Detection</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="1">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="glass-card project-card" data-category="ml" data-keywords="heart rate prediction non-contact facial features computer vision cnn fft wavelet denoising python opencv">
+            <div class="project-banner cv-gradient">
+              <i class="fa-solid fa-heart-pulse card-banner-icon"></i>
+              <span class="badge">Computer Vision</span>
+            </div>
+            <div class="project-content">
+              <h3>Non-Contact Heart Rate Prediction via Facial Video</h3>
+              <p class="project-summary">
+                Real-time webcam-based heart rate prediction system using CNN face detection, green-channel rPPG extraction, FFT, and wavelet denoising.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-bolt"></i> Real-time contactless pulse estimation with noise filtering.
+              </div>
+              <div class="project-tech-stack">
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>TensorFlow</span>
+                <span>Signal Processing (FFT)</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="2">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: VR Offshore Oil Rig -->
+          <article class="glass-card project-card" data-category="vr" data-keywords="vr fire rescue simulation offshore oil rig unity c# oculus quest emergency training simulation">
+            <div class="project-banner vr-gradient">
+              <i class="fa-solid fa-fire-extinguisher card-banner-icon"></i>
+              <span class="badge">VR Simulation</span>
+            </div>
+            <div class="project-content">
+              <h3>Offshore Oil Rig VR Fire Rescue Simulation</h3>
+              <p class="project-summary">
+                Led a development team creating an immersive VR training environment in Unity for emergency evacuation and fire safety procedures.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-vr-cardboard"></i> Optimised 3D performance for Oculus Quest 2 deployment.
+              </div>
+              <div class="project-tech-stack">
+                <span>Unity 3D</span>
+                <span>C#</span>
+                <span>Oculus SDK</span>
+                <span>3D Modelling</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="3">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="glass-card project-card" data-category="vr" data-keywords="anti sleep sensing auto parking yolo computer vision microcontroller research paper published">
+            <div class="project-banner iot-gradient">
+              <i class="fa-solid fa-car card-banner-icon"></i>
+              <span class="badge">Published Research & IoT</span>
+            </div>
+            <div class="project-content">
+              <h3>Anti-Sleep Sensing & Auto-Parking System</h3>
+              <p class="project-summary">
+                Driver assistance system detecting fatigue with YOLOv5 object detection & computer vision combined with automated vehicle parking.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-book-bookmark"></i> Published in TIJER International Journal (IF: 8.57).
+              </div>
+              <div class="project-tech-stack">
+                <span>YOLOv5</span>
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Microcontrollers</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="4">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 6: Bonfire Night Air Pollution -->
+          <article class="glass-card project-card" data-category="data-analysis" data-keywords="bonfire night air pollution pm2.5 environmental data analysis english cities python time-series eda">
+            <div class="project-banner env-gradient">
+              <i class="fa-solid fa-smog card-banner-icon"></i>
+              <span class="badge">Data Analysis & EDA</span>
+            </div>
+            <div class="project-content">
+              <h3>Bonfire Night Air Pollution Spike Analysis</h3>
+              <p class="project-summary">
+                Spatial-temporal analysis demonstrating a sharp 5-6x PM2.5 pollution spike above baseline across Northern English cities during fireworks.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-triangle-exclamation"></i> Proved timing factor > wind factor in firework pollution.
+              </div>
+              <div class="project-tech-stack">
+                <span>Data Analysis (EDA)</span>
+                <span>Python</span>
+                <span>Time-Series</span>
+                <span>Environmental Science</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="5">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 7: Night-Time PM2.5 Patterns -->
+          <article class="glass-card project-card" data-category="data-analysis" data-keywords="night time pm2.5 patterns northern english cities 2017 2024 WHO safety limits composite visualization eda data analysis">
+            <div class="project-banner env-gradient">
+              <i class="fa-solid fa-cloud-moon card-banner-icon"></i>
+              <span class="badge">Data Analysis & EDA</span>
+            </div>
+            <div class="project-content">
+              <h3>Night-Time PM2.5 Patterns in 5 Northern English Cities (2017-2024)</h3>
+              <p class="project-summary">
+                Produced a composite visualization showing night-time PM2.5 exposure stayed consistently above WHO safety limits across 5 cities over an 8-year span.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-eye"></i> Uncovered persistent urban air quality disparities.
+              </div>
+              <div class="project-tech-stack">
+                <span>Exploratory Data Analysis</span>
+                <span>Python</span>
+                <span>Visualisation</span>
+                <span>Trend Analysis</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="6">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 8: ICLR Big Data Analytics -->
+          <article class="glass-card project-card" data-category="bigdata" data-keywords="iclr big data databricks pyspark paper analysis Machine learning citation impact academic research">
+            <div class="project-banner spark-gradient">
+              <i class="fa-solid fa-network-wired card-banner-icon"></i>
+              <span class="badge">Big Data & PySpark</span>
+            </div>
+            <div class="project-content">
+              <h3>ICLR Big Data Analytics on Databricks (55k+ Papers)</h3>
+              <p class="project-summary">
+                Distributed PySpark analysis of 55,906 ICLR research submissions revealing long-term citation trends and review score correlation.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-chart-line"></i> Revealed reviewer score vs citation correlation (r = 0.0435).
+              </div>
+              <div class="project-tech-stack">
+                <span>PySpark</span>
+                <span>Databricks</span>
+                <span>Big Data</span>
+                <span>Statistical Analysis</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="7">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 9: easyJet Intelligence Report -->
+          <article class="glass-card project-card" data-category="data-analysis" data-keywords="easyjet financial intelligence report revenue recovery financial modelling investor report data analysis">
+            <div class="project-banner fin-gradient">
+              <i class="fa-solid fa-sack-dollar card-banner-icon"></i>
+              <span class="badge">Financial Intelligence</span>
+            </div>
+            <div class="project-content">
+              <h3>easyJet Corporate Intelligence Report</h3>
+              <p class="project-summary">
+                Financial performance recovery model tracing easyJet's revenue growth from £1.458bn (FY21) to £10.106bn (FY25).
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-arrow-trend-up"></i> Operating profit turnaround from -£910m to +£696m.
+              </div>
+              <div class="project-tech-stack">
+                <span>Financial Analytics</span>
+                <span>Excel</span>
+                <span>Market Share Analysis</span>
+                <span>Reporting</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="8">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- NEW Project 10: DoorDash Food Delivery Time Prediction -->
+          <article class="glass-card project-card" data-category="ml" data-keywords="doordash food delivery time prediction xgboost random forest machine learning python scikit learn regression feature engineering">
+            <div class="project-banner ml-gradient">
+              <i class="fa-solid fa-truck-fast card-banner-icon"></i>
+              <span class="badge">ML Predictive Model</span>
+            </div>
+            <div class="project-content">
+              <h3>DoorDash Food Delivery Time Prediction (XGBoost)</h3>
+              <p class="project-summary">
+                Predictive regression pipeline benchmarking XGBoost vs Random Forest across 8,000 orders to optimize food delivery times.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-stopwatch"></i> Achieved 3.23 min MAE — 63.3% reduction vs. baseline.
+              </div>
+              <div class="project-tech-stack">
+                <span>Python</span>
+                <span>XGBoost</span>
+                <span>Random Forest</span>
+                <span>Feature Engineering</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="9">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 11: KNIME Housing Price Prediction -->
+          <article class="glass-card project-card" data-category="ml" data-keywords="knime housing price prediction gradient boosted trees ames regression pipeline analytics machine learning">
+            <div class="project-banner knime-gradient">
+              <i class="fa-solid fa-house-circle-check card-banner-icon"></i>
+              <span class="badge">KNIME Predictive Pipeline</span>
+            </div>
+            <div class="project-content">
+              <h3>Housing Price Prediction in KNIME</h3>
+              <p class="project-summary">
+                End-to-end regression workflow evaluating Ames housing data; Gradient Boosted Trees achieved top predictive accuracy.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-square-poll-vertical"></i> Achieved R² = 0.781, MAE = $19,866 on holdout set.
+              </div>
+              <div class="project-tech-stack">
+                <span>KNIME</span>
+                <span>GBT Regression</span>
+                <span>Feature Engineering</span>
+                <span>Validation</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="10">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 12: Cognitive Memory Enhancement in VR -->
+          <article class="glass-card project-card" data-category="vr" data-keywords="vr cognitive memory senior citizens unity tower of hanoi moca score healthcare simulation">
+            <div class="project-banner vr-gradient">
+              <i class="fa-solid fa-brain card-banner-icon"></i>
+              <span class="badge">VR Healthcare App</span>
+            </div>
+            <div class="project-content">
+              <h3>Cognitive Memory Enhancement in Senior Citizens (VR)</h3>
+              <p class="project-summary">
+                VR training application improving MoCA cognitive assessment scores for elderly users through interactive memory puzzles.
+              </p>
+              <div class="project-key-metric">
+                <i class="fa-solid fa-face-smile"></i> Boosted MoCA scores from 22.5 to 25.3 (+30% memory recall).
+              </div>
+              <div class="project-tech-stack">
+                <span>Unity 3D</span>
+                <span>C#</span>
+                <span>Oculus SDK</span>
+                <span>User Testing & HCI</span>
+              </div>
+              <button class="btn btn-outline btn-sm view-details-btn" data-project="11">
+                View Full Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Intellectual Property Section -->
+    <section id="research" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">INTELLECTUAL PROPERTY & PUBLICATIONS</span>
+          <h2 class="section-title">Research & <span class="gradient-text">Copyrights</span></h2>
+          <p class="section-desc">Click on any card to view the official government certificate or publication document.</p>
+        </div>
+
+        <div class="research-grid">
+          <!-- Item 1: Journal Publication -->
+          <div class="glass-card research-card clickable-card" 
+               data-cert-title="Research Publication: Anti-Sleep Sensing & Auto Parking System"
+               data-cert-issuer="TIJER International Research Journal (Vol. 11, Issue 2, Feb 2024)"
+               data-cert-img="assets/cert_tijer_paper.png"
+               data-cert-pdf="TIJER_(anti-sleep)Certificate-1.pdf">
+            <div class="research-type-badge journal">
+              <i class="fa-solid fa-journal-whills"></i> International Journal Publication
+            </div>
+            <h3>Literature Review on Anti-Sleep Sensing & Auto Parking System</h3>
+            <p class="research-journal-name">TIJER - International Research Journal (Vol. 11, Issue 2, Feb 2024)</p>
+            <p class="research-summary">
+              Comprehensive analysis of computer vision drowsiness detection algorithms and IoT motor controller integration for autonomous vehicle safety.
+            </p>
+            <div class="research-meta">
+              <span class="meta-tag"><i class="fa-solid fa-star"></i> Impact Factor: 8.57</span>
+              <span class="meta-tag"><i class="fa-solid fa-eye"></i> Click to View Certificate</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Copyright 1 -->
+          <div class="glass-card research-card clickable-card" 
+               data-cert-title="Government of India Copyright: AI System for 3D Printed Medical Implants"
+               data-cert-issuer="Government of India (Registration No: L-147491/2024)"
+               data-cert-img="assets/copyright_3d_implants.png"
+               data-cert-pdf="copyrights.pdf">
+            <div class="research-type-badge copyright">
+              <i class="fa-solid fa-copyright"></i> Government Copyright (India)
+            </div>
+            <h3>AI System for Optimisation of 3D Printed Medical Implants</h3>
+            <p class="research-journal-name">Registration No: L-147491/2024</p>
+            <p class="research-summary">
+              AI-driven predictive analysis and optimisation of biodegradable material production parameters for custom 3D printed medical implants.
+            </p>
+            <div class="research-meta">
+              <span class="meta-tag"><i class="fa-solid fa-shield-halved"></i> Official IP</span>
+              <span class="meta-tag"><i class="fa-solid fa-image"></i> Click to View Document</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Copyright 2 -->
+          <div class="glass-card research-card clickable-card" 
+               data-cert-title="Government of India Copyright: Fuzzy Logic Odor Elimination in Sanitary Facilities"
+               data-cert-issuer="Government of India (Registration No: L-147005/2024)"
+               data-cert-img="assets/copyright_gas_sensor.png"
+               data-cert-pdf="gas sensor_copyrights.pdf">
+            <div class="research-type-badge copyright">
+              <i class="fa-solid fa-copyright"></i> Government Copyright (India)
+            </div>
+            <h3>Fuzzy Logic Framework for Odor Elimination in Sanitary Facilities</h3>
+            <p class="research-journal-name">Registration No: L-147005/2024</p>
+            <p class="research-summary">
+              IoT sensor network and fuzzy logic control algorithm for dynamic air quality monitoring and automated odor elimination.
+            </p>
+            <div class="research-meta">
+              <span class="meta-tag"><i class="fa-solid fa-shield-halved"></i> Official IP</span>
+              <span class="meta-tag"><i class="fa-solid fa-image"></i> Click to View Document</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Conference Presentation -->
+          <div class="glass-card research-card">
+            <div class="research-type-badge conference">
+              <i class="fa-solid fa-chalkboard-user"></i> International Conference Presentation
+            </div>
+            <h3>6th International Conference on Innovative Computing (IConIC)</h3>
+            <p class="research-journal-name">Panimalar Engineering College (April 2023)</p>
+            <p class="research-summary">
+              Presented "Anti-Sleep Sensing and Auto Parking System using Machine Learning" to academic experts and industry delegates.
+            </p>
+            <div class="research-meta">
+              <span class="meta-tag"><i class="fa-solid fa-users"></i> 200+ Attendees</span>
+              <span class="meta-tag"><i class="fa-solid fa-microphone"></i> Oral Presentation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">CAREER TIMELINE</span>
+          <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+          <p class="section-desc">Click on any timeline card to view its corresponding certificate or credentials.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Entry 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot cyan-glow"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-type education-badge">MSc Education</span>
+                  <h3>MSc Data Science</h3>
+                  <h4>University of Sheffield, United Kingdom</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Sept 2025 - Present</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Advanced study in Big Data Analytics, Machine Learning, Database Technology, and Data Visualisation.</li>
+                <li>Conducted PySpark analysis on Databricks with 55k+ academic submission records.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot indigo-glow"></div>
+            <div class="timeline-content glass-card clickable-card"
+                 data-cert-title="Deloitte Data Analytics Job Simulation Certificate"
+                 data-cert-issuer="Deloitte / Forage (June 2026)"
+                 data-cert-img="assets/cert_deloitte.png"
+                 data-cert-pdf="deloitte.pdf">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-type simulation-badge">Industry Simulation</span>
+                  <h3>Data Analytics Virtual Experience</h3>
+                  <h4>Deloitte (via Forage)</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> June 2026</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Analysed complex corporate datasets using forensic data analysis techniques.</li>
+                <li>Prepared client-facing executive summaries adhering to Deloitte standard reporting frameworks.</li>
+              </ul>
+              <div class="card-click-hint"><i class="fa-solid fa-certificate"></i> Click to View Certificate</div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot indigo-glow"></div>
+            <div class="timeline-content glass-card clickable-card"
+                 data-cert-title="British Airways Data Science Job Simulation Certificate"
+                 data-cert-issuer="British Airways / Forage (May 2026)"
+                 data-cert-img="assets/cert_british_airways.png"
+                 data-cert-pdf="British_Airways_data_science.pdf">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-type simulation-badge">Industry Simulation</span>
+                  <h3>Data Science Virtual Experience</h3>
+                  <h4>British Airways (via Forage)</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> May 2026</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Web scraped customer review sentiment data to quantify airline satisfaction trends.</li>
+                <li>Built a predictive machine learning model for customer flight booking conversion, evaluated via ROC/AUC curves.</li>
+              </ul>
+              <div class="card-click-hint"><i class="fa-solid fa-certificate"></i> Click to View Certificate</div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 4 -->
+          <div class="timeline-item">
+            <div class="timeline-dot indigo-glow"></div>
+            <div class="timeline-content glass-card clickable-card"
+                 data-cert-title="Lloyds Banking Group Data Science Job Simulation Certificate"
+                 data-cert-issuer="Lloyds Banking Group / Forage (May 2026)"
+                 data-cert-img="assets/cert_lloyds.png"
+                 data-cert-pdf="LLOYDS.pdf">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-type simulation-badge">Industry Simulation</span>
+                  <h3>Data Science Virtual Experience</h3>
+                  <h4>Lloyds Banking Group (via Forage)</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> May 2026</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Executed exploratory data analysis on financial transaction data to identify risk factors.</li>
+                <li>Engineered classification models to evaluate retail customer credit behavior.</li>
+              </ul>
+              <div class="card-click-hint"><i class="fa-solid fa-certificate"></i> Click to View Certificate</div>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 5 -->
+          <div class="timeline-item">
+            <div class="timeline-dot cyan-glow"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-type education-badge">B.Tech Education</span>
+                  <h3>B.Tech Artificial Intelligence & Data Science</h3>
+                  <h4>Panimalar Engineering College, India</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Graduated May 2025</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Graduated with a strong academic standing of <strong>CGPA: 8.06 / 10</strong>.</li>
+                <li>Specialised in Machine Learning, Deep Learning, Computer Vision, and Data Structures.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline Entry 6 -->
+          <div class="timeline-item">
+            <div class="timeline-dot purple-glow"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-type intern-badge">Web Internship</span>
+                  <h3>Web Development Intern</h3>
+                  <h4>RepuNEXT, Chennai</h4>
+                </div>
+                <span class="timeline-date"><i class="fa-regular fa-calendar"></i> June 2023</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Designed and styled responsive web interfaces for client websites, elevating user experience.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section bg-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">VERIFIED CREDENTIALS</span>
+          <h2 class="section-title">Certifications & <span class="gradient-text">Badges</span></h2>
+          <p class="section-desc">Click any certification card to view the official certificate image.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <div class="glass-card cert-card clickable-card"
+               data-cert-title="Associate Data Analyst in SQL Certificate"
+               data-cert-issuer="DataCamp (39 Hours)"
+               data-cert-img="assets/cert_sql.png"
+               data-cert-pdf="SQL.pdf">
+            <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="cert-info">
+              <h4>Associate Data Analyst in SQL</h4>
+              <p class="cert-issuer">DataCamp (39 Hours)</p>
+              <span class="cert-date"><i class="fa-solid fa-calendar-check"></i> April 2026</span>
+            </div>
+            <div class="card-click-hint"><i class="fa-solid fa-image"></i> View Certificate</div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="glass-card cert-card clickable-card"
+               data-cert-title="Data Analyst in Power BI (Career Track)"
+               data-cert-issuer="DataCamp (50 Hours)"
+               data-cert-img="assets/cert_powerbi.png"
+               data-cert-pdf="power bi main.pdf">
+            <div class="cert-icon"><i class="fa-solid fa-chart-column"></i></div>
+            <div class="cert-info">
+              <h4>Data Analyst in Power BI (Career Track)</h4>
+              <p class="cert-issuer">DataCamp (50 Hours)</p>
+              <span class="cert-date"><i class="fa-solid fa-calendar-check"></i> September 2026</span>
+            </div>
+            <div class="card-click-hint"><i class="fa-solid fa-image"></i> View Certificate</div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glass-card cert-card clickable-card"
+               data-cert-title="Data Manipulation in KNIME Certificate"
+               data-cert-issuer="DataCamp"
+               data-cert-img="assets/cert_knime_manipulation.png"
+               data-cert-pdf="Knime_manipulation.pdf">
+            <div class="cert-icon"><i class="fa-solid fa-diagram-next"></i></div>
+            <div class="cert-info">
+              <h4>Data Manipulation in KNIME</h4>
+              <p class="cert-issuer">DataCamp</p>
+              <span class="cert-date"><i class="fa-solid fa-calendar-check"></i> February 2026</span>
+            </div>
+            <div class="card-click-hint"><i class="fa-solid fa-image"></i> View Certificate</div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="glass-card cert-card clickable-card"
+               data-cert-title="Data Transformation in KNIME Certificate"
+               data-cert-issuer="DataCamp"
+               data-cert-img="assets/cert_knime_transformation.png"
+               data-cert-pdf="data_ttransformation.pdf">
+            <div class="cert-icon"><i class="fa-solid fa-diagram-next"></i></div>
+            <div class="cert-info">
+              <h4>Data Transformation in KNIME</h4>
+              <p class="cert-issuer">DataCamp</p>
+              <span class="cert-date"><i class="fa-solid fa-calendar-check"></i> February 2026</span>
+            </div>
+            <div class="card-click-hint"><i class="fa-solid fa-image"></i> View Certificate</div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="glass-card cert-card clickable-card"
+               data-cert-title="Data Visualization in KNIME Certificate"
+               data-cert-issuer="DataCamp"
+               data-cert-img="assets/cert_knime_visualization.png"
+               data-cert-pdf="data_visualization.pdf">
+            <div class="cert-icon"><i class="fa-solid fa-diagram-next"></i></div>
+            <div class="cert-info">
+              <h4>Data Visualization in KNIME</h4>
+              <p class="cert-issuer">DataCamp</p>
+              <span class="cert-date"><i class="fa-solid fa-calendar-check"></i> March 2026</span>
+            </div>
+            <div class="card-click-hint"><i class="fa-solid fa-image"></i> View Certificate</div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="glass-card cert-card clickable-card"
+               data-cert-title="Data Analysis with Python Certificate"
+               data-cert-issuer="IBM Cognitive Class"
+               data-cert-img="assets/cert_python.png"
+               data-cert-pdf="Kirthi_sabari(cert).pdf">
+            <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="cert-info">
+              <h4>Data Analysis with Python</h4>
+              <p class="cert-issuer">IBM Cognitive Class</p>
+              <span class="cert-date"><i class="fa-solid fa-calendar-check"></i> July 2024</span>
+            </div>
+            <div class="card-click-hint"><i class="fa-solid fa-image"></i> View Certificate</div>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="glass-card cert-card clickable-card"
+               data-cert-title="Deloitte Data Analytics Simulation Certificate"
+               data-cert-issuer="Deloitte / Forage"
+               data-cert-img="assets/cert_deloitte.png"
+               data-cert-pdf="deloitte.pdf">
+            <div class="cert-icon"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="cert-info">
+              <h4>Deloitte Data Analytics Simulation</h4>
+              <p class="cert-issuer">Deloitte / Forage</p>
+              <span class="cert-date"><i class="fa-solid fa-calendar-check"></i> June 2026</span>
+            </div>
+            <div class="card-click-hint"><i class="fa-solid fa-image"></i> View Certificate</div>
+          </div>
+
+          <!-- Cert 8 -->
+          <div class="glass-card cert-card clickable-card"
+               data-cert-title="British Airways Data Science Simulation Certificate"
+               data-cert-issuer="British Airways / Forage"
+               data-cert-img="assets/cert_british_airways.png"
+               data-cert-pdf="British_Airways_data_science.pdf">
+            <div class="cert-icon"><i class="fa-solid fa-plane"></i></div>
+            <div class="cert-info">
+              <h4>British Airways Data Science Simulation</h4>
+              <p class="cert-issuer">British Airways / Forage</p>
+              <span class="cert-date"><i class="fa-solid fa-calendar-check"></i> May 2026</span>
+            </div>
+            <div class="card-click-hint"><i class="fa-solid fa-image"></i> View Certificate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">LET'S CONNECT</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <p class="section-desc">Open for Data Analyst, BI Developer & Data Science opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="glass-card contact-info-card">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out directly via email, phone, or LinkedIn!</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <div class="contact-value-box">
+                    <span id="email-text">kirthisabari561@gmail.com</span>
+                    <button class="copy-btn" onclick="copyToClipboard('kirthisabari561@gmail.com', this)" title="Copy Email">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <div class="contact-value-box">
+                    <span id="phone-text">+44 7352678358</span>
+                    <button class="copy-btn" onclick="copyToClipboard('+447352678358', this)" title="Copy Phone">
+                      <i class="fa-regular fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="contact-label">Location</span>
+                  <span class="contact-value">Sheffield, S1 4NQ, United Kingdom</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-buttons">
+              <a href="https://linkedin.com/in/kirthisabari25" target="_blank" rel="noopener" class="btn btn-secondary btn-full">
+                <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+              </a>
+              <a href="https://github.com/kirthisabari25" target="_blank" rel="noopener" class="btn btn-outline btn-full">
+                <i class="fa-brands fa-github"></i> View GitHub Repositories
+              </a>
+            </div>
+          </div>
+
+          <div class="glass-card contact-form-card">
+            <h3>Send Me a Message</h3>
+            <form id="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" required placeholder="John Doe" />
+              </div>
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" required placeholder="john@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" required placeholder="Data Analyst Opportunity / Collaboration" />
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="5" required placeholder="Write your message here..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <p id="form-status" class="form-status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Kirthi Sabari Kumar. Designed & Built with Precision.</p>
+      <a href="#hero" class="back-to-top" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Modal for Project & Certificate Details -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true">
+    <div class="modal-card glass-card">
+      <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+      <div class="modal-body" id="modal-body">
+        <!-- Content injected dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
