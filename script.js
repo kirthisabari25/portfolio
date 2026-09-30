@@ -149,7 +149,7 @@ function initProjectFilters() {
 }
 
 /* --------------------------------------------------------------------------
-   4. Project Detailed Case Study Modals (All 12 Projects)
+   4. Project Detailed Case Study Modals (All 13 Projects)
    -------------------------------------------------------------------------- */
 const projectsData = [
   {
@@ -165,6 +165,20 @@ const projectsData = [
       "Delivered strategic recommendations targeting high-churn customer segments to protect revenue."
     ],
     tools: ["Power BI", "DAX", "Data Modelling", "Segmentation Analysis", "Star Schema"]
+  },
+  {
+    title: "Etsy Checkout Redesign A/B Test & Multi-Segment Launch Strategy",
+    category: "Data Analysis & A/B Testing",
+    badge: "A/B Testing & Experimentation Case Study",
+    metrics: "31,000+ user sessions analyzed; +34.3% desktop conversion lift vs -23.0% mobile drop identified.",
+    overview: "Analysed multi-device experiment logs (31K+ sessions) for Etsy's checkout redesign, executing statistical hypothesis testing, sample ratio mismatch (SRM) checks, and segment-specific revenue impact modeling.",
+    details: [
+      "Verified balanced treatment/control assignment using a Chi-Square goodness-of-fit test for Sample Ratio Mismatch (p = 0.421).",
+      "Evaluated conversion rates, AOV, and revenue per user across desktop and mobile using proportion z-tests, Welch's t-tests, and Benjamini-Hochberg FDR corrections.",
+      "Discovered a statistically significant +34.3% conversion lift on desktop, contrasted with a -23.0% conversion decline on mobile caused by payment form rendering friction.",
+      "Formulated a multi-segment rollout strategy recommending an immediate desktop-only launch (+ $28,455/mo incremental revenue) while pausing mobile deployment to prevent a $42,000/mo loss."
+    ],
+    tools: ["Python", "Pandas", "NumPy", "SciPy", "Statsmodels", "A/B Testing", "Hypothesis Testing", "Seaborn"]
   },
   {
     title: "Cycle-Level Tool Condition Monitoring using Temporal Conv Autoencoder",
@@ -468,10 +482,38 @@ window.copyToClipboard = function(text, btnElement) {
    -------------------------------------------------------------------------- */
 window.handleFormSubmit = function(e) {
   e.preventDefault();
+  const nameEl = document.getElementById('form-name');
+  const emailEl = document.getElementById('form-email');
+  const subjectEl = document.getElementById('form-subject');
+  const messageEl = document.getElementById('form-message');
   const status = document.getElementById('form-status');
+
+  const name = nameEl ? nameEl.value.trim() : '';
+  const email = emailEl ? emailEl.value.trim() : '';
+  const subject = subjectEl ? subjectEl.value.trim() : 'Data Analyst Opportunity / Inquiry';
+  const message = messageEl ? messageEl.value.trim() : '';
+
+  if (!name || !email || !message) {
+    if (status) {
+      status.className = 'form-status error';
+      status.textContent = 'Please fill out all required fields before sending.';
+    }
+    return;
+  }
+
+  // Construct mailto URL to send email directly to Kirthi Sabari
+  const mailtoSubject = encodeURIComponent(`[Portfolio Inquiry] ${subject}`);
+  const mailtoBody = encodeURIComponent(`Hello Kirthi,\n\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n\n---\nSent via Portfolio Contact Form`);
+  const mailtoUrl = `mailto:kirthisabari561@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+  // Trigger default email client launch
+  window.location.href = mailtoUrl;
+
   if (status) {
     status.className = 'form-status success';
-    status.textContent = 'Thank you! Your message has been sent successfully. I will get back to you shortly.';
-    document.getElementById('contact-form').reset();
+    status.innerHTML = `<i class="fa-solid fa-circle-check"></i> Thank you, <strong>${name}</strong>! Opening your email client to send the message to <strong>kirthisabari561@gmail.com</strong>.<br><span style="font-size:0.82rem; opacity:0.85;">If your mail app didn't open automatically, <a href="${mailtoUrl}" style="color: var(--accent-cyan); text-decoration: underline;">click here to launch email directly</a>.</span>`;
   }
+
+  const form = document.getElementById('contact-form');
+  if (form) form.reset();
 };
